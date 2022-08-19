@@ -144,7 +144,6 @@ CORS_ALLOW_CREDENTIALS = True
 # SECRET_KEY = get_env_variable('DJANGO_SECRET')
 import os 
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 from django.views.static import serve
 from django.urls import re_path
@@ -153,8 +152,8 @@ urlpatterns = [
 		re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}),
 ]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join("staticfiles")
+# STATIC_ROOT = '/static/'
 STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]

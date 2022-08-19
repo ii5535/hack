@@ -145,6 +145,7 @@ CORS_ALLOW_CREDENTIALS = True
 import os 
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 from django.views.static import serve
 from django.urls import re_path
 from django.conf import settings
@@ -153,6 +154,10 @@ urlpatterns = [
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+STATICFILES_DIRS=[
+    BASE_DIR/'static'
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

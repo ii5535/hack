@@ -146,7 +146,7 @@ import os
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 from django.views.static import serve
 from django.urls import re_path
-
+from django.conf import settings
 urlpatterns = [
 		re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}),
 ]

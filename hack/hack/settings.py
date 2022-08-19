@@ -154,7 +154,7 @@ urlpatterns = [
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
-
+STATIC_ROOT = '/static/'
 STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]

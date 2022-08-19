@@ -124,3 +124,5 @@ AUTH_USER_MODEL = 'account.Account'
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".cloudtype.app"]
 CSRF_TRUSTED_ORIGINS = ['https://*.cloudtype.app']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".cloudtype.app"]
+CSRF_TRUSTED_ORIGINS = ['https://*.cloudtype.app']
